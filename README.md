@@ -41,11 +41,11 @@ Open http://localhost:8000. (The local server doesn't serve `404.html` for missi
 ### Push
 
 ```bash
-git remote add origin git@github.com:<github-username>/mangue.dev.git
+git remote add origin git@github.com:raghavverma190/mangue.dev.git
 git push -u origin main
 ```
 
-(HTTPS alternative: `git remote add origin https://github.com/<github-username>/mangue.dev.git`)
+(HTTPS alternative: `git remote add origin https://github.com/raghavverma190/mangue.dev.git`)
 
 ## Porkbun DNS records
 
@@ -63,7 +63,7 @@ In Porkbun: **Domain Management → mangue.dev → DNS**.
 | A     | *(blank)*                 | `185.199.109.153`              | 600 |
 | A     | *(blank)*                 | `185.199.110.153`              | 600 |
 | A     | *(blank)*                 | `185.199.111.153`              | 600 |
-| CNAME | `www`                     | `<github-username>.github.io`  | 600 |
+| CNAME | `www`                     | `raghavverma190.github.io`  | 600 |
 
 **Optional, for IPv6:**
 
@@ -123,7 +123,7 @@ Also update the "iOS · TestFlight beta" chip on `/index.html` and the "Go quiet
 - **Pricing** is in the "Pricing" section of `stockhush/index.html`, and repeated in `stockhush/terms/index.html` and the JSON-LD block in the `<head>` of `stockhush/index.html`. Change all three together.
 - **FAQ** appears in two places: `stockhush/index.html` (the `<dl class="faq">` list) and `stockhush/support/index.html` (the `<details>` blocks).
 - **Phone mockups** are HTML in the pages, styled by `assets/css/phone.css`. Each one has a `role="img"` and an `aria-label` describing it. If you change the visible text, update the label too.
-- **Legal pages:** search for `[CONFIRM` and `[LEGAL_NAME]` and replace each one. Each page ends with a yellow-bordered "items to confirm" list; delete that `<section class="confirm-list">` once everything is filled in, and set the effective date.
+- **Legal pages:** search for `[CONFIRM` and replace each one. Each page ends with a yellow-bordered "items to confirm" list; delete that `<section class="confirm-list">` once everything is filled in, and set the effective date.
 - **New pages:** copy an existing page, then update its `<title>`, `<meta name="description">`, `<link rel="canonical">` and OG/Twitter tags, and add it to `sitemap.xml`.
 - **Social images** (`assets/img/og-*.png`, 1200×630) were rendered from HTML with headless Chrome. To change them, edit and re-export in any tool at 1200×630.
 - **Year:** the footers say "© 2026". Update it by hand each year:
