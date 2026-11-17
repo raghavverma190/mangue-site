@@ -28,7 +28,7 @@ Open http://localhost:8000. (The local server doesn't serve `404.html` for missi
 
 ## Deploy to GitHub Pages
 
-1. Create an **empty public repository** on GitHub, for example `mangue.dev`. Don't add a README, license or .gitignore.
+1. Create an **empty public repository** on GitHub, for example `mangue-site`. Don't add a README, license or .gitignore.
 2. Push this repo (see "Push" below).
 3. On GitHub: **Settings → Pages**
    - **Source:** Deploy from a branch
@@ -41,11 +41,11 @@ Open http://localhost:8000. (The local server doesn't serve `404.html` for missi
 ### Push
 
 ```bash
-git remote add origin git@github.com:raghavverma190/mangue.dev.git
+git remote add origin git@github.com:raghavverma190/mangue-site.git
 git push -u origin main
 ```
 
-(HTTPS alternative: `git remote add origin https://github.com/raghavverma190/mangue.dev.git`)
+(HTTPS alternative: `git remote add origin https://github.com/raghavverma190/mangue-site.git`)
 
 ## Porkbun DNS records
 
