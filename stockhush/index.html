@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Hush for iPhone: Quiet, until something matters</title>
+  <meta name="description" content="Stock Hush shields your brokerage app and stays silent unless a holding moves past the threshold you set. No dashboards, no live prices, nothing to check for its own sake.">
+  <link rel="canonical" href="https://mangue.dev/stockhush/">
+  <meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161826" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mangue">
+  <meta property="og:title" content="Stock Hush: Quiet, until something matters">
+  <meta property="og:description" content="Shields your brokerage app and tells you only when a holding has actually crossed your threshold.">
+  <meta property="og:url" content="https://mangue.dev/stockhush/">
+  <meta property="og:image" content="https://mangue.dev/assets/img/og-stockhush.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Stock Hush. Quiet, until something matters.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stock Hush: Quiet, until something matters">
+  <meta name="twitter:description" content="Shields your brokerage app and tells you only when a holding has actually crossed your threshold.">
+  <meta name="twitter:image" content="https://mangue.dev/assets/img/og-stockhush.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/assets/fonts/InterVariable-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/phone.css">
+  <link rel="stylesheet" href="/assets/css/stockhush.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Stock Hush",
+    "operatingSystem": "iOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Stock Hush shields your brokerage app and tells you only when a holding has actually crossed your threshold.",
+    "url": "https://mangue.dev/stockhush/",
+    "publisher": { "@type": "Organization", "name": "Mangue", "url": "https://mangue.dev/" },
+    "offers": [
+      { "@type": "Offer", "name": "Annual", "price": "29.99", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Monthly", "price": "2.99", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Lifetime", "price": "74.99", "priceCurrency": "USD" }
+    ]
+  }
+  </script>
+</head>
+<body class="theme-stockhush">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="s-nav">
+    <div class="container">
+      <a class="s-brand" href="/stockhush/">
+        <img src="/assets/img/stockhush-icon.svg" alt="" width="32" height="32">
+        <span>Stock Hush</span>
+      </a>
+      <nav aria-label="Main">
+        <ul>
+          <li class="nav-text"><a href="#how-it-works">How it works</a></li>
+          <li class="nav-text"><a href="#pricing">Pricing</a></li>
+          <li class="nav-text"><a href="#faq">FAQ</a></li>
+          <!-- CTA link: search-and-replace this URL everywhere to switch to the App Store (see README) -->
+          <li><a class="btn btn-sm btn-accent" data-cta="testflight" href="https://testflight.apple.com/join/eSAuBwD7" rel="noopener">Join the beta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="s-hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Stock Hush for <span class="nocase">i</span>Phone</p>
+          <h1 id="hero-title" class="display">Quiet, until something matters.</h1>
+          <p class="lede">Stock Hush knows what you hold and what you paid. It shields your brokerage app and stays silent unless a position moves enough to be worth knowing. No dashboards, no live prices, nothing to check for its own sake.</p>
+          <div class="actions">
+            <a class="btn btn-accent" data-cta="testflight" href="https://testflight.apple.com/join/eSAuBwD7" rel="noopener">Join the TestFlight beta</a>
+            <a class="text-link" href="#how-it-works">See how it works</a>
+          </div>
+        </div>
+
+        <div class="phones">
+          <div class="phone phone--light phone--outlined phone--tall" role="img" aria-label="Stock Hush home screen in light mode. It reads: Quietly watching your holdings. All holdings are within your threshold. Shielding 1 app, on. Rows for Select Apps to Shield and Manage Investments. Prices last checked today at 9:14 AM.">
+            <div aria-hidden="true">
+              <p class="phone__title">Stock Hush</p>
+              <div class="phone__hero">
+                <svg class="glyph" viewBox="0 0 24.5 18.5" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 17.25 7.875 10.875 11.625 14.125 18 6.625"/><path d="M19.25 1v8M15.25 5h8"/></g></svg>
+                <span class="phone__caption">Quietly watching your holdings.</span>
+              </div>
+              <div class="ui-status">All holdings are within your threshold.</div>
+              <div class="ui-group ui-shield">
+                <div class="ui-shield__head">Shielding 1 app · On</div>
+                <div class="ui-shield__row"><span>Enable Shielding</span><span class="ui-toggle"></span></div>
+              </div>
+              <div class="ui-group">
+                <div class="ui-row"><span>Select Apps to Shield</span><span class="ui-chev"></span></div>
+                <div class="ui-row"><span>Manage Investments</span><span class="ui-chev"></span></div>
+              </div>
+              <p class="phone__foot">Prices last checked today at 9:14 AM</p>
+            </div>
+          </div>
+
+          <div class="phone phone--dark phone--tall" role="img" aria-label="Stock Hush home screen in dark mode, with one holding flagged. It reads: Quietly watching your holdings. NVDA has moved more than 12% from what you paid. Shielding 1 app, on. Rows for Select Apps to Shield and Manage Investments.">
+            <div aria-hidden="true">
+              <p class="phone__title">Stock Hush</p>
+              <div class="phone__hero">
+                <svg class="glyph" viewBox="0 0 24.5 18.5" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 17.25 7.875 10.875 11.625 14.125 18 6.625"/><path d="M19.25 1v8M15.25 5h8"/></g></svg>
+                <span class="phone__caption">Quietly watching your holdings.</span>
+              </div>
+              <div class="ui-status ui-status--alert">NVDA has moved more than 12% from what you paid.</div>
+              <div class="ui-group ui-shield">
+                <div class="ui-shield__head">Shielding 1 app · On</div>
+                <div class="ui-shield__row"><span>Enable Shielding</span><span class="ui-toggle"></span></div>
+              </div>
+              <div class="ui-group">
+                <div class="ui-row"><span>Select Apps to Shield</span><span class="ui-chev"></span></div>
+                <div class="ui-row"><span>Manage Investments</span><span class="ui-chev"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="s-section" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title" class="h2">Resolve the worry instead of feeding it.</h2>
+        <ol class="steps" role="list">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">1</span>
+            <h3><span class="sr-only">Step 1: </span>Tell it what you hold</h3>
+            <p>Add each ticker, how many shares, and what you paid. Pick the move that counts as worth knowing.</p>
+            <div class="ui" role="img" aria-label="Manage Investments screen: alert threshold set to 12%, with holdings AAPL, 12 shares, paid $184.20; MSFT, 6 shares, paid $402.10; NVDA, 8 shares, paid $121.90.">
+              <div class="ui-tray" aria-hidden="true">
+                <div class="ui-group"><div class="ui-row ui-threshold"><span>Alert threshold: 12%</span><span class="ui-stepper"><span>−</span><span>+</span></span></div></div>
+                <div class="ui-group">
+                  <div class="ui-row ui-row--stack"><div class="ui-row__title">AAPL</div><div class="ui-row__sub">12 shares · paid $184.20</div></div>
+                  <div class="ui-row ui-row--stack"><div class="ui-row__title">MSFT</div><div class="ui-row__sub">6 shares · paid $402.10</div></div>
+                  <div class="ui-row ui-row--stack"><div class="ui-row__title">NVDA</div><div class="ui-row__sub">8 shares · paid $121.90</div></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">2</span>
+            <h3><span class="sr-only">Step 2: </span>Choose the apps to quiet</h3>
+            <p>Select your investing apps with Screen Time. Stock Hush stands in front of them when you open one.</p>
+            <div class="ui" role="img" aria-label="Shielding controls: Shielding 1 app, on, with Enable Shielding switched on, and a Select Apps to Shield row.">
+              <div class="ui-tray" aria-hidden="true">
+                <div class="ui-group ui-shield">
+                  <div class="ui-shield__head">Shielding 1 app · On</div>
+                  <div class="ui-shield__row"><span>Enable Shielding</span><span class="ui-toggle"></span></div>
+                </div>
+                <div class="ui-group"><div class="ui-row"><span>Select Apps to Shield</span><span class="ui-chev"></span></div></div>
+              </div>
+            </div>
+          </li>
+          <li class="step step--wide">
+            <span class="step__num" aria-hidden="true">3</span>
+            <h3><span class="sr-only">Step 3: </span>Get the answer, then get on with your day</h3>
+            <p>If nothing has crossed your threshold, you're told so plainly. If something has, you're told which holding and by how much.</p>
+            <div class="ui" role="img" aria-label="Two example status messages. One reads: All holdings are within your threshold. The other reads: NVDA has moved more than 12% from what you paid.">
+              <div class="ui-tray" aria-hidden="true">
+                <div class="ui-status">All holdings are within your threshold.</div>
+                <div class="ui-status ui-status--alert">NVDA has moved more than 12% from what you paid.</div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Designed to disappear -->
+    <section class="s-section" aria-labelledby="disappear-title">
+      <div class="container">
+        <div class="s-panel">
+          <p class="eyebrow">Designed to disappear</p>
+          <h2 id="disappear-title" class="h2">Everything a finance app does, left out on purpose.</h2>
+          <ul role="list">
+            <li>
+              <h3>Nothing to check</h3>
+              <p>No live prices, no color-coded gains, no streaks or rings. Opening Stock Hush should never feel worth doing on its own.</p>
+            </li>
+            <li>
+              <h3>It never locks you out</h3>
+              <p>If you open an app Stock Hush is shielding, the shield turns off automatically. Open Stock Hush again when you're done to turn shielding back on.</p>
+            </li>
+            <li>
+              <h3>Prices update every 70 minutes</h3>
+              <p>Stock Hush aims to check prices every 70 minutes. If more time has passed, opening the app triggers a refresh and tells you whether any holding has crossed your threshold.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="s-section s-pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <p class="eyebrow">Go Quiet</p>
+        <h2 id="pricing-title" class="h2">Try it free for 30 days.</h2>
+        <p class="lede">Unlimited holdings, shielding, and threshold alerts. Cancel anytime before your trial ends and you won't be charged.</p>
+        <ul class="plans" role="list">
+          <li class="plan plan--featured">
+            <div class="plan__head"><h3>Annual</h3><span class="badge">SAVE 16%</span></div>
+            <p class="plan__price">$29.99<small>/yr</small></p>
+            <p>$2.50 a month · 30 days free</p>
+          </li>
+          <li class="plan">
+            <div class="plan__head"><h3>Monthly</h3></div>
+            <p class="plan__price">$2.99<small>/mo</small></p>
+            <p>30 days free, then billed monthly</p>
+          </li>
+          <li class="plan">
+            <div class="plan__head"><h3>Lifetime</h3></div>
+            <p class="plan__price">$74.99 <small>once</small></p>
+            <p>Pay once, no trial, no renewals</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="s-section s-faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title" class="h2">Good to know.</h2>
+        </div>
+        <dl class="faq">
+          <dt>How does Stock Hush know what I hold?</dt>
+          <dd>You add your holdings yourself: the ticker, how many shares, and what you paid. Stock Hush compares today's price to that.</dd>
+          <dt>Can it lock me out of my brokerage app?</dt>
+          <dd>No. If you open an app Stock Hush is shielding, the shield turns off automatically. Stock Hush never locks you out.</dd>
+          <dt>How often do prices update?</dt>
+          <dd>Stock Hush aims to check every 70 minutes. If more time than that has passed, opening the app is what triggers the refresh.</dd>
+          <dt>What happens when my free trial ends?</dt>
+          <dd>You choose a plan to keep Stock Hush watching. Cancel any time before the trial ends and you won't be charged. Manage or cancel in your App Store subscriptions.</dd>
+          <dt>Is this financial advice?</dt>
+          <dd>No. Stock Hush only tells you whether a holding has moved past the threshold you set. It doesn't recommend buying or selling anything.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="s-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="s-cta">
+          <svg class="glyph" viewBox="0 0 24.5 18.5" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 17.25 7.875 10.875 11.625 14.125 18 6.625"/><path d="M19.25 1v8M15.25 5h8"/></g></svg>
+          <h2 id="cta-title">Go quiet.</h2>
+          <p>Join the TestFlight beta and tell us how it feels.</p>
+          <a class="btn btn-white" data-cta="testflight" href="https://testflight.apple.com/join/eSAuBwD7" rel="noopener">Join the TestFlight beta</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a class="wordmark" href="/" aria-label="mangue, home">mangue<span class="dot" aria-hidden="true"></span></a>
+        <span>Stock Hush is an app from Mangue · © 2026</span>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="/stockhush/privacy/">Privacy</a></li>
+          <li><a href="/stockhush/terms/">Terms</a></li>
+          <li><a href="/stockhush/support/">Support</a></li>
+          <li><a href="mailto:support@mangue.dev">support@mangue.dev</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

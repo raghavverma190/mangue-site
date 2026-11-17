@@ -1,0 +1,204 @@
+/* ==========================================================================
+   Phone mockups + small app-UI fragments, rebuilt in HTML/CSS from the
+   Stock Hush designs. Everything is sized in em: set font-size on .phone
+   (or .ui) to scale the whole thing. Decorative only: each mockup root is
+   role="img" with an aria-label; children are aria-hidden.
+   ========================================================================== */
+
+.ui,
+.phone {
+  /* light defaults (app palette) */
+  --ui-ground: #F2F2F7;
+  --ui-surface: #FFFFFF;
+  --ui-label: #1C1C1E;
+  --ui-secondary: #6B6B73;
+  --ui-tertiary: #8A8A93;
+  --ui-sep: rgba(60, 60, 67, .14);
+  --ui-accent: #6C5FD0;
+  --ui-glyph: #6C5FD0;
+  --ui-dot: #A9A9B2;
+  --ui-dot-alert: #6C5FD0;
+  --ui-btn: rgba(108, 95, 208, .12);
+  --ui-btn-fg: #5B4FC4;
+  font-family: var(--font);
+  color: var(--ui-label);
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+
+.ui--dark,
+.phone--dark {
+  --ui-ground: #161826;
+  --ui-surface: #1E2035;
+  --ui-label: #E9E9ED;
+  --ui-secondary: #A3A3B2;
+  --ui-tertiary: #8D8D9C;
+  --ui-sep: rgba(233, 233, 237, .08);
+  --ui-glyph: #B0A4EA;
+  --ui-dot: #7C7C8A;
+  --ui-dot-alert: #B0A4EA;
+  --ui-btn: rgba(176, 164, 234, .16);
+  --ui-btn-fg: #B0A4EA;
+}
+
+/* ---- Phone frame ---- */
+.phone {
+  position: relative;
+  width: 18.75em;
+  min-height: 32.5em;
+  padding: 4em 1em 1.5em;
+  border-radius: 2.5em;
+  background: var(--ui-ground);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .06);
+}
+.phone--tall { min-height: 37em; }
+.phone--dark {
+  box-shadow: 0 1.75em 3.5em -1em rgba(22, 24, 38, .35), 0 0 0 1px rgba(255, 255, 255, .04);
+}
+.phone--light.phone--outlined {
+  box-shadow: 0 0 0 1px #D6D6DD, 0 1.25em 2.5em -1.5em rgba(28, 28, 30, .18);
+}
+
+.phone__title {
+  color: var(--ui-label);
+  margin: 0 0 0.75em 0.3em;
+  font-size: 1.75em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.phone__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55em;
+  margin-bottom: 1.1em;
+  color: var(--ui-glyph);
+}
+.phone__hero .glyph { width: 1.75em; height: auto; }
+.phone__caption {
+  font-size: 0.78em;
+  color: var(--ui-secondary);
+}
+.phone__foot {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 0.66em;
+  color: var(--ui-secondary);
+}
+
+/* ---- Shared app-UI pieces ---- */
+.ui-group {
+  background: var(--ui-surface);
+  border-radius: 0.75em;
+  overflow: hidden;
+}
+.ui-group + .ui-group,
+.ui-status + .ui-group,
+.ui-group + .ui-status,
+.ui-status + .ui-status { margin-top: 0.6em; }
+
+.ui-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6em;
+  padding: 0.85em 0.8em;
+  background: var(--ui-surface);
+  border-radius: 0.75em;
+  font-size: 0.8em;
+}
+.ui-status::before {
+  content: "";
+  flex: none;
+  width: 0.42em;
+  height: 0.42em;
+  margin-top: 0.42em;
+  border-radius: 50%;
+  background: var(--ui-dot);
+}
+.ui-status--alert::before { background: var(--ui-dot-alert); }
+
+.ui-shield {
+  padding: 0.85em 0.75em 0.75em;
+}
+.ui-shield__head {
+  font-size: 0.72em;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+.ui-shield__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.ui-toggle {
+  position: relative;
+  flex: none;
+  width: 2.75em;
+  height: 1.6em;
+  border-radius: 999px;
+  background: var(--ui-accent);
+}
+.ui-toggle::after {
+  content: "";
+  position: absolute;
+  top: 0.18em; right: 0.18em;
+  width: 1.24em; height: 1.24em;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.ui-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75em;
+  min-height: 2.6em;
+  padding: 0 0.95em;
+  font-size: 0.8em;
+}
+.ui-row + .ui-row { border-top: 1px solid var(--ui-sep); }
+.ui-row--stack {
+  display: block;
+  padding: 0.7em 0.95em;
+  min-height: 0;
+}
+.ui-row__title { font-weight: 600; }
+.ui-row__sub { font-size: 0.82em; color: var(--ui-secondary); margin-top: 0.1em; }
+
+.ui-chev {
+  flex: none;
+  width: 0.45em;
+  height: 0.45em;
+  border-right: 1.5px solid var(--ui-tertiary);
+  border-top: 1.5px solid var(--ui-tertiary);
+  transform: rotate(45deg);
+  margin-right: 0.15em;
+}
+
+.ui-stepper {
+  display: inline-flex;
+  border-radius: 0.5em;
+  overflow: hidden;
+  background: var(--ui-btn);
+  color: var(--ui-btn-fg);
+  font-weight: 600;
+}
+.ui-stepper span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9em;
+  height: 1.5em;
+}
+.ui-stepper span + span { border-left: 1px solid var(--ui-sep); }
+
+/* A tray = the grouped background panel that UI fragments sit on */
+.ui-tray {
+  padding: 0.6em;
+  border-radius: 1em;
+  background: var(--ui-ground);
+}
