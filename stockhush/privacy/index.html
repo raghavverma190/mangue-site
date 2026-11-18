@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy: Stock Hush</title>
-  <meta name="description" content="How Stock Hush, an app from Mangue, handles your information: what it uses, what stays on your device, and how to contact us.">
+  <meta name="description" content="How Stock Hush, an app from Mangue, handles your information: your holdings stay on your phone, and only ticker symbols are sent to check prices.">
   <link rel="canonical" href="https://mangue.dev/stockhush/privacy/">
   <meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#161826" media="(prefers-color-scheme: dark)">
@@ -58,89 +58,69 @@
       <article class="prose">
         <p class="eyebrow">Stock Hush</p>
         <h1>Privacy Policy</h1>
-        <p class="meta">Effective date: <mark class="confirm">[CONFIRM: effective date]</mark> · Draft</p>
+        <p class="meta">Effective date: October 19, 2026 · Last updated: November 18, 2026</p>
 
         <div class="callout">
-          <p><strong>The short version.</strong> Stock Hush is meant to know as little about you as it can. The holdings you type in are yours. The apps you choose to shield are picked through Apple's Screen Time, stay on your device, and are never visible to us.</p>
+          <p><strong>The short version.</strong> There are no accounts, no analytics and no advertising. Your holdings stay on your phone. To check prices, the app sends ticker symbols only.</p>
         </div>
 
-        <h2>Who we are</h2>
-        <p>Stock Hush is an app from Mangue. Mangue is a brand name, not a company. The app is offered by <strong>Raghav Verma</strong>, a sole proprietor ("we", "us"), who is responsible for your information as described here.</p>
-        <p>Contact: <a href="mailto:support@mangue.dev">support@mangue.dev</a>. <mark class="confirm">[CONFIRM: postal address, if you need to publish one (required in some places, for example under GDPR)]</mark></p>
+        <h2>Who I am</h2>
+        <p>Stock Hush is an app from Mangue. Mangue is a brand name, not a company. The app is made by <strong>Raghav Verma</strong>, a sole proprietor based in Toronto, Ontario, Canada ("I", "me"), who is responsible for your information as described here.</p>
+        <p>Contact: <a href="mailto:raghavbusiness190@gmail.com">raghavbusiness190@gmail.com</a></p>
 
-        <h2>What Stock Hush uses, and why</h2>
-
-        <h3>Holdings you enter</h3>
-        <p>You add each holding yourself: the ticker, how many shares, and the price you paid. You also choose an alert threshold. Stock Hush uses these to compare today's price to what you paid, so it can tell you whether a holding has moved past your threshold.</p>
-        <p>Where this is stored: <mark class="confirm">[CONFIRM: on your device only / also synced through iCloud / also stored on a Mangue server]</mark></p>
-
-        <h3>Price lookups</h3>
-        <p>To check prices, Stock Hush has to look up current prices for the tickers you hold. <mark class="confirm">[CONFIRM: how this works. Does the app ask a market-data provider directly, or go through a Mangue server? Which tickers are sent, and are they sent with any device or account identifier? Are share counts or prices paid ever sent off the device?]</mark></p>
-
-        <h3>Screen Time (the apps you shield)</h3>
-        <p>Stock Hush uses Apple's Screen Time frameworks (FamilyControls, ManagedSettings and DeviceActivity) to shield the investing apps you choose. You pick those apps in Apple's own Screen Time picker. Your Screen Time selections stay on your device and are never accessible to us. We can't see which apps you chose or how you use them.</p>
-
-        <h3>Purchases</h3>
-        <p>Subscriptions and the lifetime purchase are sold through Apple's App Store using In-App Purchase. Apple handles payment, and we never receive your card or billing details. <mark class="confirm">[CONFIRM: what purchase information you receive or store, for example subscription status from StoreKit, any server-side receipt validation, or a third-party subscription service]</mark></p>
-
-        <h3>Notifications</h3>
-        <p><mark class="confirm">[CONFIRM: does Stock Hush send notifications? If so, are they local or push? If push, what token is stored and where?]</mark></p>
-
-        <h3>Diagnostics</h3>
-        <p><mark class="confirm">[CONFIRM: does the app include any crash reporting or analytics, or does it rely only on Apple's opt-in App Analytics and crash reports?]</mark></p>
-
-        <h2>What we don't do</h2>
-        <p><mark class="confirm">[CONFIRM before publishing that each of these is true: we don't sell your information; we don't show ads; we don't track you across other companies' apps or websites]</mark></p>
-
-        <h2>Server logs</h2>
-        <p><mark class="confirm">[CONFIRM: if a backend is involved, what it logs (for example IP address, tickers requested, timestamps), where it is hosted, and how long logs are kept]</mark></p>
-
-        <h2>How long we keep information, and deleting it</h2>
-        <p>Information kept only on your device is removed when you delete it in the app or delete the app. <mark class="confirm">[CONFIRM: this is accurate given where data is stored (for example, not true if it syncs to iCloud)]</mark></p>
-        <p>You can ask us to delete any information we hold about you by emailing <a href="mailto:support@mangue.dev">support@mangue.dev</a>. <mark class="confirm">[CONFIRM: retention periods for anything held off-device, and how deletion requests are handled]</mark></p>
-
-        <h2>Third parties</h2>
+        <h2>What stays on your device</h2>
+        <p>The following is stored only on your iPhone and is never sent to me or to anyone else:</p>
         <ul>
-          <li><strong>Apple</strong>, for the App Store, In-App Purchase and the Screen Time frameworks. Apple's handling of your information is covered by Apple's own privacy policy.</li>
-          <li><mark class="confirm">[CONFIRM: market-data provider, hosting provider, email provider, and any other service that receives user information]</mark></li>
+          <li><strong>Your holdings:</strong> tickers, number of shares and the price you paid.</li>
+          <li><strong>Your alert threshold</strong> and your app settings.</li>
+          <li><strong>Your Screen Time selection,</strong> meaning the apps you chose to shield. Stock Hush uses Apple's Screen Time frameworks (FamilyControls, ManagedSettings and DeviceActivity), which give the app only anonymous tokens for these apps. The app can't see their names, and the selection is never transmitted.</li>
+          <li><strong>Cached prices</strong> the app has downloaded, used to show your status and the shield message.</li>
+        </ul>
+        <p>Some of this is kept in a storage area shared between the app and its shield extensions, so the shield screen can show your status. That storage is local to your device.</p>
+
+        <h2>What is sent off your device</h2>
+        <p>To check prices, the app sends <strong>ticker symbols only</strong> (for example "NVDA") to a price service I operate. It also sends the text you type when you search for a ticker. The app does not send your share counts, the prices you paid, your thresholds, or any information that identifies you.</p>
+        <p>My price service uses a third-party market-data provider, Twelve Data, to look up quotes. Only ticker symbols and search text reach that provider. Your device and your IP address do not.</p>
+        <p>The price service runs on Cloudflare. Like any internet service, Cloudflare may process technical data such as your IP address and request details to deliver the service and protect it from abuse, under its standard logging. I don't store any logs myself, I don't use this data to identify or profile you, and I don't link it to any account, because there are no accounts.</p>
+
+        <h2>Purchases</h2>
+        <p>Subscriptions and the lifetime purchase are handled entirely by Apple through the App Store. I never see your payment details, your name or your Apple Account. The app checks your purchase status on your device using Apple's StoreKit framework. Apple's own privacy policy governs how Apple handles that information.</p>
+
+        <h2>Notifications</h2>
+        <p>Stock Hush doesn't send notifications.</p>
+
+        <h2>What I don't do</h2>
+        <ul>
+          <li>I don't collect your name, email address, phone number or location.</li>
+          <li>I don't use analytics, crash-reporting or advertising SDKs.</li>
+          <li>I don't track you across other companies' apps or websites.</li>
+          <li>I don't sell or share personal information.</li>
         </ul>
 
-        <h2>This website</h2>
-        <p>mangue.dev is a static website. It sets no cookies, uses no analytics or trackers, and loads no third-party scripts or fonts. It is hosted on GitHub Pages, and GitHub may process technical information such as your IP address to deliver and secure the site, as described in GitHub's privacy statement. If you email us, we use your message and address only to reply.</p>
+        <h2>Screen Time permission</h2>
+        <p>The app asks for Screen Time access so it can shield the investing apps you choose. This permission is managed by iOS. You can turn it off at any time in iOS Settings, and shielding will stop working until you turn it back on.</p>
+
+        <h2>Your choices</h2>
+        <ul>
+          <li>Delete a holding in the app at any time to remove it from your device.</li>
+          <li>Delete the app to remove all data it stores on your device.</li>
+          <li>Manage or cancel a subscription in iOS Settings → your name → Subscriptions.</li>
+        </ul>
 
         <h2>Your rights</h2>
-        <p>Depending on where you live (for example the EU, the UK or California), you may have the right to access, correct, delete or export your personal information, or to object to or restrict how it's used. To make a request, email <a href="mailto:support@mangue.dev">support@mangue.dev</a>. We'll respond within <mark class="confirm">[CONFIRM: response time, e.g. 30 days]</mark>. You can also complain to your local data protection authority.</p>
-        <p><mark class="confirm">[CONFIRM: if GDPR applies, the legal basis for each use, such as providing the service you asked for]</mark></p>
+        <p>Depending on where you live (for example Canada, the EU, the UK or California), you may have rights to access, correct or delete personal information about you. Because the app has no accounts and I don't store logs, I generally hold no personal information that I can link to you. If you have a question or a request, email <a href="mailto:raghavbusiness190@gmail.com">raghavbusiness190@gmail.com</a> and I'll respond within 30 days. You can also contact your local privacy regulator.</p>
 
-        <h2>Children's privacy</h2>
-        <p>Stock Hush is not directed to children under <mark class="confirm">[CONFIRM: age, e.g. 13 (or 16 in parts of the EU); match the App Store age rating]</mark>, and we don't knowingly collect personal information from them. If you think a child has given us personal information, email us and we'll delete it.</p>
+        <h2>Children</h2>
+        <p>Stock Hush is not directed at children under 13, and I don't knowingly collect information from them.</p>
+
+        <h2>This website</h2>
+        <p>mangue.dev is a static website. It sets no cookies, uses no analytics or trackers, and loads no third-party scripts or fonts. It is hosted on GitHub Pages, and GitHub may process technical information such as your IP address to deliver and secure the site, as described in GitHub's privacy statement. If you email me, I use your message and address only to reply.</p>
 
         <h2>Changes to this policy</h2>
-        <p>If we change this policy, we'll post the new version on this page and update the effective date at the top. If a change is significant, we'll also make a reasonable effort to let you know, for example in the app. <mark class="confirm">[CONFIRM: how you will notify users of material changes]</mark></p>
+        <p>If I change this policy, I'll update the date above. If a change is material, I'll say so in the app's release notes.</p>
 
         <h2>Contact</h2>
-        <p>Questions about privacy: <a href="mailto:support@mangue.dev">support@mangue.dev</a>.</p>
-
-        <section class="confirm-list" aria-labelledby="confirm-title">
-          <h2 id="confirm-title">Draft: items to confirm before publishing</h2>
-          <ol>
-            <li>effective date</li>
-            <li>postal address, if you need to publish one (required in some places, for example under GDPR)</li>
-            <li>on your device only / also synced through iCloud / also stored on a Mangue server</li>
-            <li>how this works. Does the app ask a market-data provider directly, or go through a Mangue server? Which tickers are sent, and are they sent with any device or account identifier? Are share counts or prices paid ever sent off the device?</li>
-            <li>what purchase information you receive or store, for example subscription status from StoreKit, any server-side receipt validation, or a third-party subscription service</li>
-            <li>does Stock Hush send notifications? If so, are they local or push? If push, what token is stored and where?</li>
-            <li>does the app include any crash reporting or analytics, or does it rely only on Apple's opt-in App Analytics and crash reports?</li>
-            <li>if a backend is involved, what it logs (for example IP address, tickers requested, timestamps), where it is hosted, and how long logs are kept</li>
-            <li>this is accurate given where data is stored (for example, not true if it syncs to iCloud)</li>
-            <li>retention periods for anything held off-device, and how deletion requests are handled</li>
-            <li>market-data provider, hosting provider, email provider, and any other service that receives user information</li>
-            <li>response time, e.g. 30 days</li>
-            <li>if GDPR applies, the legal basis for each use, such as providing the service you asked for</li>
-            <li>age, e.g. 13 (or 16 in parts of the EU); match the App Store age rating</li>
-            <li>how you will notify users of material changes</li>
-          </ol>
-        </section>
+        <p>Questions about this policy: <a href="mailto:raghavbusiness190@gmail.com">raghavbusiness190@gmail.com</a></p>
       </article>
     </div>
   </main>
